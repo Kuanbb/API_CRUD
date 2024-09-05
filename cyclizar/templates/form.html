@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="{% url 'cadastra'%}" method="POST">
+        <h1>CADASTRO DE USUÁRIOS</h1>
+        {% csrf_token%}
+        {{form}}
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br><br><br>
+    <a href="tabela.html">Deleta</a>
+</body>
+</html>
